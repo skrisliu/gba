@@ -1,0 +1,19 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.481,
+          22.556
+        ]
+      },
+      "properties": {
+        "title": "SZ's 1st wildlife corridor",
+        "description": "SZ's 1st wildlife corridor"
+      }
+    }
+  ]
+}
