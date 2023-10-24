@@ -36,7 +36,7 @@
     map.on('load', function () {
       map.addSource('points', {
         'type': 'geojson',
-        'data': 'https://skrisliu.com/gba/sz.geojson'
+        'data': 'https://skrisliu.com/gba-wildlife-corridor/sz.geojson'
       });
       map.addLayer({
         'id': 'points',
@@ -63,7 +63,7 @@
       map.on('click', 'points', function (e) {
         var coordinates = e.features[0].geometry.coordinates.slice();
         var description = e.features[0].properties.description;
-        var imlink = "https://skrisliu.com/gba/szwildlife.jpg";
+        var imlink = "https://skrisliu.com/gba-wildlife-corridor/szwildlife.jpg";
 
         // Ensure that if the map is zoomed out such that multiple
         // copies of the feature are visible, the popup appears
