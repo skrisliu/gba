@@ -36,7 +36,7 @@
     map.on('load', function () {
       map.addSource('points', {
         'type': 'geojson',
-        'data': 'https://sjliu.me/Flickr/Hong-Kong/sz.geojson'
+        'data': 'https://skrisliu.com/gba/sz.geojson'
       });
       map.addLayer({
         'id': 'points',
@@ -44,11 +44,11 @@
         'source': 'points',
         'paint': {
           'circle-radius': {
-            'base': 5,
+            'base': 10,
             'stops': [
-              [1, 5],
-              [11, 5],
-              [15, 6],
+              [1, 10],
+              [11, 10],
+              [15, 10],
               [16, 10],
               [17, 14],
               [18, 18],
@@ -63,7 +63,7 @@
       map.on('click', 'points', function (e) {
         var coordinates = e.features[0].geometry.coordinates.slice();
         var description = e.features[0].properties.description;
-        var imlink = "https://sjliu.me/Flickr/Hong-Kong/szwildlife.jpg";
+        var imlink = "https://skrisliu.com/gba/szwildlife.jpg";
 
         // Ensure that if the map is zoomed out such that multiple
         // copies of the feature are visible, the popup appears
